@@ -1,0 +1,129 @@
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+
+:root{ 
+/*colars*/
+--display: linear-gradient(70deg, #CAD4C5, #B2BFA5);
+--the_numbers_on_the_display: #F1F3F6;
+--values:#3A4E89;
+--numbers: #3A4E89;
+--numderas_button: #F1F3F6;
+--background_calculate: #F1F3F6;
+}
+
+
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator_heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    padding: 31px 0px 0px 26px;
+}
+
+
+.calculator {
+
+    width: 414px;
+    height: 736px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--background_calculate);
+    
+   
+    
+}
+
+.calculator_display_field { 
+    border-radius: 10px; 
+    margin: 20px 26px 20px 26px;
+    padding: 20px 24px;
+    background:var(--display);
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    text-align: right; 
+    font-family: 'Digital Numbers', sans-serif; 
+}
+
+.calculator__history strong {
+    font-size: 24px;
+}
+
+
+.calculator_background_total {
+    color: #373a3710;
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    
+}
+.calculator__total {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    font-size: 32px;
+    font-weight: 600;
+}
+.calkulator__actions {
+    padding: 0px 16px;
+    font-size: 29px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.calculator__row {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.calculator__col {   
+    border-radius: 20px;
+    
+    width:  80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 8PX;
+}
+.calculator__actione {
+    width: 80px;
+    height: 80px;
+    color: var(--values);
+    box-shadow: 5px 5px 10px 0px rgba(58, 78, 137, 0.2),
+                -5px -5px 10px 0px rgb(255, 255, 255);
+
+}
+.calculator__nulle {    
+    
+    border-radius: 20px;
+    width:  176px;
+    height: 80px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.calculator__reset {
+background-color: var(--values);
+color: var(--numderas_button);
+margin: 8PX;
+
+
+}
